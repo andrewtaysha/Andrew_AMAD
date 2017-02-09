@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cake</key>
+	<array>
+		<string>chocolate</string>
+		<string>vanilla</string>
+		<string>carrot</string>
+		<string>cheese</string>
+	</array>
+	<key>pie</key>
+	<array>
+		<string>apple</string>
+		<string>cherry</string>
+		<string>pumpkin</string>
+		<string>pecan</string>
+	</array>
+	<key>ice cream</key>
+	<array>
+		<string>chocolate</string>
+		<string>vanilla</string>
+		<string>rocky road</string>
+		<string>mint chip</string>
+	</array>
+	<key>cookies</key>
+	<array>
+		<string>chocolate</string>
+		<string>sugar</string>
+		<string>oatmeal raisin</string>
+		<string>snickerdoodle</string>
+	</array>
+	<key>drinks</key>
+	<array>
+		<string>hot chocolate</string>
+		<string>milk</string>
+		<string>coffee</string>
+		<string>alcohol</string>
+	</array>
+</dict>
+</plist>
