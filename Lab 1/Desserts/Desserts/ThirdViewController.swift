@@ -61,6 +61,18 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         dessertLabel.text = "You like \(dessertKind[dessertKindrow]) \(dessert[dessertrow])"
     }
     
+    @IBAction func findDessert(_ sender: UIButton) {
+        if(UIApplication.shared.canOpenURL(URL(string: "yelp://")!)){
+            UIApplication.shared.open(URL(string: "yelp://")!, options: [:], completionHandler: nil)
+        }else {
+            if(UIApplication.shared.canOpenURL(URL(string: "maps://")!)){
+                UIApplication.shared.open(URL(string: "maps://")!, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.open(URL(string: "http://www.google.com/dessert_near_me")!, options: [:], completionHandler: nil)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
