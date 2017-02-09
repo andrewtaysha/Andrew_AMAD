@@ -169,7 +169,7 @@
                             <constraint firstItem="PCf-fc-AHe" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="yZp-fW-scr"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Time" image="Dessert2-20" selectedImage="Dessert2-20" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Time" image="Time-22" selectedImage="Time-22" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="chooseDessert" destination="PCf-fc-AHe" id="I8s-OX-aHy"/>
                         <outlet property="dessertLabel" destination="8cc-0s-LwX" id="L9D-po-vnM"/>
@@ -202,5 +202,6 @@
     </scenes>
     <resources>
         <image name="Dessert2-20" width="20" height="20"/>
+        <image name="Time-22" width="22" height="22"/>
     </resources>
 </document>
