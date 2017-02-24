@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -165,22 +166,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4A-IC-RGw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4A-IC-RGw">
                                 <rect key="frame" x="16" y="127" width="95" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="kMN-UO-Smr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Iv-Gu-EgL">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Iv-Gu-EgL">
                                 <rect key="frame" x="184" y="127" width="175" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u4A-IC-RGw" firstAttribute="bottom" secondItem="2Iv-Gu-EgL" secondAttribute="bottom" id="7i8-vp-4kW"/>
+                            <constraint firstItem="u4A-IC-RGw" firstAttribute="top" secondItem="342-3j-06U" secondAttribute="bottom" constant="63" id="9Sf-QK-8o0"/>
+                            <constraint firstItem="u4A-IC-RGw" firstAttribute="leading" secondItem="Qid-q2-PhC" secondAttribute="leadingMargin" id="b2X-AI-vea"/>
+                            <constraint firstItem="2Iv-Gu-EgL" firstAttribute="leading" secondItem="u4A-IC-RGw" secondAttribute="trailing" constant="73" id="dU5-5L-3o9"/>
+                            <constraint firstItem="2Iv-Gu-EgL" firstAttribute="trailing" secondItem="Qid-q2-PhC" secondAttribute="trailingMargin" id="ebl-pw-J7w"/>
+                            <constraint firstItem="u4A-IC-RGw" firstAttribute="top" secondItem="2Iv-Gu-EgL" secondAttribute="top" id="oMH-i5-GY7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Tev-7Y-hhI">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="CMs-qp-xPt">
