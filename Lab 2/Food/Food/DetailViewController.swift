@@ -16,6 +16,7 @@ class DetailViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         foodTypeListDetail.foodType = Array(foodTypeListDetail.foodTypeData.keys)
+        print(selectedFoodType)
         let chosenFoodType = foodTypeListDetail.foodType[selectedFoodType]
         foods = foodTypeListDetail.foodTypeData[chosenFoodType]! as [String]
     }

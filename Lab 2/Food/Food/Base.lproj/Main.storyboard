@@ -27,8 +27,8 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="4bV-E4-GPQ" kind="show" id="bpR-rx-DhU"/>
-                                    <segue destination="HQa-GG-EoX" kind="show" trigger="accessoryAction" id="0e5-Fy-JN1"/>
+                                    <segue destination="4bV-E4-GPQ" kind="show" identifier="foodssegue" id="bpR-rx-DhU"/>
+                                    <segue destination="HQa-GG-EoX" kind="show" identifier="foodTypesegue" trigger="accessoryAction" id="0e5-Fy-JN1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

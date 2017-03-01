@@ -316,6 +316,7 @@
 				261147A21E65DBA4008E4482 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
