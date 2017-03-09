@@ -195,12 +195,12 @@
                     <navigationItem key="navigationItem" id="Tev-7Y-hhI">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="CMs-qp-xPt">
                             <connections>
-                                <segue destination="Vpy-Ca-cCS" kind="unwind" unwindAction="unwindSegue:" id="SV1-oy-LoB"/>
+                                <segue destination="Vpy-Ca-cCS" kind="unwind" identifier="cancelSegue" unwindAction="unwindSegue:" id="zlt-kQ-Iee"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="ZZ8-ie-4sQ">
                             <connections>
-                                <segue destination="Vpy-Ca-cCS" kind="unwind" unwindAction="unwindSegue:" id="Jvt-bL-9hY"/>
+                                <segue destination="Vpy-Ca-cCS" kind="unwind" identifier="doneSegue" unwindAction="unwindSegue:" id="Lbd-yp-Hg7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
