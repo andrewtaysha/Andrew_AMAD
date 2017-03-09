@@ -10,6 +10,7 @@ import UIKit
 
 class DetailViewController: UITableViewController {
     
+    var searchController: UISearchController!
     var foods = [String]()
     var selectedFoodType = 0
     var foodTypeListDetail = Foods()
@@ -19,6 +20,17 @@ class DetailViewController: UITableViewController {
         print(selectedFoodType)
         let chosenFoodType = foodTypeListDetail.foodType[selectedFoodType]
         foods = foodTypeListDetail.foodTypeData[chosenFoodType]! as [String]
+        //search results
+        let resultsController = SearchResultsController() //create an instance of our SearchResultsController class
+        print(foods)
+        resultsController.allWords = foods //set the allWords property to our words array
+        searchController = UISearchController(searchResultsController: resultsController) // initialize our search controller with the resultsController when it has search results to display
+        
+        //search bar configuration
+        searchController.searchBar.placeholder = "Enter a search term" //place holder text
+        searchController.searchBar.sizeToFit() // sets appropriate size size for the search bar
+        tableView.tableHeaderView=searchController.searchBar // install the search bar as the table header
+        searchController.searchResultsUpdater = resultsController //sets the instance to update search results
     }
     
     func getDataFile() -> String? {

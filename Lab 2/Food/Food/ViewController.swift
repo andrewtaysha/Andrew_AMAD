@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UITableViewController {
 
-    var words = [String]()
-    var searchController: UISearchController!
+    /*var words = [String]()
+    var searchController: UISearchController!*/
     var foodTypeList = Foods()
     let kfilename = "data.plist"
     
@@ -47,7 +47,7 @@ class ViewController: UITableViewController {
         
         self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
         
-        words = Array(foodTypeList.foodTypeData.keys)
+        /*words = Array(foodTypeList.foodTypeData.keys)
         
         //search results
         let resultsController = SearchResultsController() //create an instance of our SearchResultsController class
@@ -58,7 +58,7 @@ class ViewController: UITableViewController {
         searchController.searchBar.placeholder = "Enter a search term" //place holder text
         searchController.searchBar.sizeToFit() // sets appropriate size size for the search bar
         tableView.tableHeaderView=searchController.searchBar // install the search bar as the table header
-        searchController.searchResultsUpdater = resultsController //sets the instance to update search results
+        searchController.searchResultsUpdater = resultsController //sets the instance to update search results */
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

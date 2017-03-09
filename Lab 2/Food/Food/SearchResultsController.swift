@@ -43,6 +43,7 @@ class SearchResultsController: UITableViewController, UISearchResultsUpdating {
     }
 
     func updateSearchResults(for searchController: UISearchController) {
+        print(allWords)
         let searchString = searchController.searchBar.text //search string
         filteredWords.removeAll(keepingCapacity: true) //removes all elements
         if searchString?.isEmpty == false {
