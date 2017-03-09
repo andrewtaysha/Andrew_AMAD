@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UITableViewController {
-    
+
     var words = [String]()
     var searchController: UISearchController!
     var foodTypeList = Foods()
@@ -25,13 +25,19 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let path = getDataFile() else {
-            print("Error loading file")
-            return
+        let path:String?
+        
+        let filePath = docFilePath(kfilename) //path to data file
+        //if the data file exists, use it
+        if FileManager.default.fileExists(atPath: filePath!){
+            path = filePath
+        } else {
+            path = getDataFile()
         }
+        
         //load the words of the plist file into the array
-        foodTypeList.foodTypeData = NSDictionary(contentsOfFile: path) as! [String : [String]]
-        //puts all the continents in an array
+        foodTypeList.foodTypeData = NSDictionary(contentsOfFile: path!) as! [String : [String]]
+        //puts all the continents in an dictionary
         foodTypeList.foodType = Array(foodTypeList.foodTypeData.keys)
         
         //application instance
@@ -40,6 +46,8 @@ class ViewController: UITableViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(UIApplicationDelegate.applicationWillResignActive(_:)), name: NSNotification.Name(rawValue: "UIApplicationWillResignActiveNotification"), object: app)
         
         self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
+        
+        words = Array(foodTypeList.foodTypeData.keys)
         
         //search results
         let resultsController = SearchResultsController() //create an instance of our SearchResultsController class

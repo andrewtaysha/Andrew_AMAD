@@ -16,7 +16,7 @@ class SearchResultsController: UITableViewController, UISearchResultsUpdating {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellIdentifier")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CellIdentifier")
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -59,7 +59,7 @@ class SearchResultsController: UITableViewController, UISearchResultsUpdating {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     let cell = tableView.dequeueReusableCell(withIdentifier: "cellIdentifier", for: indexPath)
+     let cell = tableView.dequeueReusableCell(withIdentifier: "CellIdentifier", for: indexPath)
      cell.textLabel?.text = filteredWords[indexPath.row]
      cell.detailTextLabel?.text="foods"
      /*cell.imageView?.image = { get (scrabble_q) }*/

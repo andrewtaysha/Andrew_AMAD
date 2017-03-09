@@ -11,6 +11,20 @@
 	<array>
 		<string>Broccoli</string>
 		<string>Carrots</string>
+		<string>Eggplant</string>
+		<string>Potato</string>
+		<string>Yam</string>
+		<string>Sweet Potato</string>
+		<string>Shallot</string>
+		<string>Cucumber</string>
+		<string>Garlic</string>
+		<string>Onion</string>
+		<string>Bell Pepper</string>
+		<string>Cauliflower</string>
+		<string>Peas</string>
+		<string>Spinach</string>
+		<string>Lettuce</string>
+		<string>Kale</string>
 	</array>
 	<key>Legumes</key>
 	<array>

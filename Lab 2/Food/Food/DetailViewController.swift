@@ -21,6 +21,14 @@ class DetailViewController: UITableViewController {
         foods = foodTypeListDetail.foodTypeData[chosenFoodType]! as [String]
     }
     
+    func getDataFile() -> String? {
+        //use a Bundle object of the directory for our application to retrieve the pathname of qwordsnou.plist
+        guard let pathString = Bundle.main.path(forResource: "foods", ofType: "plist") else {
+            return nil
+        }
+        return pathString
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
