@@ -13,13 +13,13 @@ private let reuseIdentifier = "Cell"
 class ImagesCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     var imageList=[String]()
-    let sectionInsets = UIEdgeInsets(top: 5.0, left: 5.0, bottom: 0.0, right: 5.0)
+    let sectionInsets = UIEdgeInsets(top: 5.0, left: 5.0, bottom: 5.0, right: 5.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
-        for i in 1...20{
+        for i in 1...9{
             imageList.append("image" + String(i))
         }
         
@@ -71,6 +71,7 @@ class ImagesCollectionViewController: UICollectionViewController, UICollectionVi
         return cell
     }
     
+    // code for header and footer http://stackoverflow.com/questions/29655652/how-to-make-both-header-and-footer-in-collection-view-with-swift
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         var header: CollectionReusableView?
         var footer: CollectionReusableView?
@@ -81,7 +82,7 @@ class ImagesCollectionViewController: UICollectionViewController, UICollectionVi
             header?.headerLabel.text = "My Images"
             return header!
             
-        case UICollectionElementKindSectionHeader:
+        case UICollectionElementKindSectionFooter:
             footer = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "footer", for: indexPath) as? CollectionReusableView
             footer?.footerLabel.text = "9 Images"
             return footer!
@@ -94,7 +95,7 @@ class ImagesCollectionViewController: UICollectionViewController, UICollectionVi
     
     // UICollectionViewDelegateFlowLayout method
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+   /* func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let image = UIImage(named: imageList[indexPath.row])
         
         // code to create resized image from https://www.snip2code.com/Snippet/89236/Resize-Image-in-iOS-Swift
@@ -107,7 +108,7 @@ class ImagesCollectionViewController: UICollectionViewController, UICollectionVi
         //end resizing
         
         return (image2?.size)!
-    }
+    }*/
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return sectionInsets
