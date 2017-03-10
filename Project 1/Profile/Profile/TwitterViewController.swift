@@ -15,14 +15,12 @@ class TwitterViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var tweetTableView: UITableView!
     
     var dataSource = [AnyObject]()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tweetTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         getTimeLine()
         tweetTableView.estimatedRowHeight = 50
-
         // Do any additional setup after loading the view.
     }
 
@@ -30,7 +28,6 @@ class TwitterViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     func getTimeLine() {
         
@@ -50,16 +47,12 @@ class TwitterViewController: UIViewController, UITableViewDelegate, UITableViewD
                     let requestURL = URL(string:
                         "https://api.twitter.com/1.1/statuses/user_timeline.json")
                     
-                    let parameters = ["screen_name" : "@techotopia",
+                    let parameters = ["screen_name" : "@andrewtaysha",
                                       "include_rts" : "0",
                                       "trim_user" : "1",
                                       "count" : "20"]
                     
-                    let postRequest = SLRequest(forServiceType:
-                        SLServiceTypeTwitter,
-                                                requestMethod: SLRequestMethod.GET,
-                                                url: requestURL,
-                                                parameters: parameters)
+                    let postRequest = SLRequest(forServiceType: SLServiceTypeTwitter, requestMethod: SLRequestMethod.GET, url: requestURL, parameters: parameters)
                     
                     postRequest?.account = twitterAccount
                     
@@ -87,7 +80,7 @@ class TwitterViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell =
             tableView.dequeueReusableCell(withIdentifier: "Cell")
@@ -96,7 +89,6 @@ class TwitterViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell!.textLabel!.text = tweet.object(forKey: "text") as? String
         cell!.textLabel!.numberOfLines = 0
         return cell!
-        
     }
     
     /*
