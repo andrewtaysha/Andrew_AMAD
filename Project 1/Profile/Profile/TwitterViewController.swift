@@ -17,20 +17,17 @@ class TwitterViewController: UIViewController, UITableViewDelegate, UITableViewD
     var dataSource = [AnyObject]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tweetTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         getTimeLine()
         tweetTableView.estimatedRowHeight = 50
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     func getTimeLine() {
-        
+
         let account = ACAccountStore()
         let accountType = account.accountType(
             withAccountTypeIdentifier: ACAccountTypeIdentifierTwitter)
@@ -102,3 +99,34 @@ class TwitterViewController: UIViewController, UITableViewDelegate, UITableViewD
     */
 
 }
+/*import TwitterKit
+
+class TwitterViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Add a button to the center of the view to show the timeline
+        let button = UIButton(type: .system)
+        button.setTitle("Show Timeline", for: [])
+        button.sizeToFit()
+        button.center = view.center
+        button.addTarget(self, action: #selector(showTimeline), for: [.touchUpInside])
+        view.addSubview(button)
+    }
+    func showTimeline() {
+        // Create an API client and data source to fetch Tweets for the timeline
+        let client = TWTRAPIClient()
+        //TODO: Replace with your collection id or a different data source
+        let dataSource = TWTRCollectionTimelineDataSource(collectionID: "539487832448843776", apiClient: client)
+        // Create the timeline view controller
+        let timelineViewControlller = TWTRTimelineViewController(dataSource: dataSource)
+        // Create done button to dismiss the view controller
+        let button = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissTimeline))
+        timelineViewControlller.navigationItem.leftBarButtonItem = button
+        // Create a navigation controller to hold the
+        let navigationController = UINavigationController(rootViewController: timelineViewControlller)
+        showDetailViewController(navigationController, sender: self)
+    }
+    func dismissTimeline() {
+        dismiss(animated: true, completion: nil)
+    }
+}*/

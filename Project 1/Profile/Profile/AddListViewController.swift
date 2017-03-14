@@ -1,17 +1,29 @@
 //
-//  InstagramViewController.swift
+//  AddListViewController.swift
 //  Profile
 //
-//  Created by Andrew Taylor-Shaut on 2/28/17.
+//  Created by Andrew Taylor-Shaut on 3/12/17.
 //  Copyright © 2017 Andrew Taylor-Shaut. All rights reserved.
 //
 
-//did not find how to access the feed like with Twiiter feed
+//did not get working
 
 import UIKit
 
-class InstagramViewController: UIViewController {
+class AddListViewController: UIViewController {
 
+    @IBOutlet weak var newListTextfield: UITextField!
+
+    var addedList = String()
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) { if segue.identifier == "doneNewListSegue"{
+        //only add a country if there is text in the textfield
+        if ((newListTextfield.text?.isEmpty) == false){
+            addedList=newListTextfield.text!
+        }
+    }
+}
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -19,6 +31,7 @@ class InstagramViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+
     /*
     // MARK: - Navigation
 
@@ -28,5 +41,4 @@ class InstagramViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

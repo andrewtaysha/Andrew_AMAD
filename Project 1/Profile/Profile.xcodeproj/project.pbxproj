@@ -13,10 +13,23 @@
 		2611479C1E65DBA4008E4482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2611479A1E65DBA4008E4482 /* LaunchScreen.storyboard */; };
 		261147A61E65E2AE008E4482 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261147A51E65E2AE008E4482 /* TwitterViewController.swift */; };
 		261147AA1E65E2F7008E4482 /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261147A91E65E2F7008E4482 /* InstagramViewController.swift */; };
-		261147AC1E65E306008E4482 /* NotepadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261147AB1E65E306008E4482 /* NotepadViewController.swift */; };
-		261147AE1E65E315008E4482 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261147AD1E65E315008E4482 /* ListTableViewController.swift */; };
+		261147AC1E65E306008E4482 /* DetailNotepadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261147AB1E65E306008E4482 /* DetailNotepadViewController.swift */; };
+		2634AEF51E75FA3D00DB1485 /* NotepadsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2634AEF41E75FA3D00DB1485 /* NotepadsTableViewController.swift */; };
+		2634AEF71E75FA5600DB1485 /* ListsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2634AEF61E75FA5600DB1485 /* ListsTableViewController.swift */; };
+		2634AEFB1E75FB6800DB1485 /* GridsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2634AEFA1E75FB6800DB1485 /* GridsTableViewController.swift */; };
+		2634AEFD1E75FB8B00DB1485 /* NewGridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2634AEFC1E75FB8B00DB1485 /* NewGridCollectionViewController.swift */; };
+		2634AEFF1E7607BA00DB1485 /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2634AEFE1E7607BA00DB1485 /* GridCollectionViewCell.swift */; };
+		2634AF011E760A0D00DB1485 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2634AF001E760A0D00DB1485 /* ImagePickerViewController.swift */; };
+		2634AF071E761ADE00DB1485 /* AddListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2634AF061E761ADE00DB1485 /* AddListViewController.swift */; };
 		2641B4371E68A21600643E00 /* HubCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641B4361E68A21600643E00 /* HubCollectionViewController.swift */; };
-		26BAE03A1E7296BC0045C808 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE0391E7296BC0045C808 /* Note.swift */; };
+		26AE31721E77B93600746D87 /* DetailListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AE31711E77B93600746D87 /* DetailListTableViewController.swift */; };
+		26AE31741E77BADE00746D87 /* Lists.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26AE31731E77BADE00746D87 /* Lists.plist */; };
+		26AE31761E77BC4F00746D87 /* ListNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AE31751E77BC4F00746D87 /* ListNames.swift */; };
+		26AE317A1E77D92400746D87 /* Notepads.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26AE31791E77D92400746D87 /* Notepads.plist */; };
+		26AE317C1E77D93800746D87 /* Grids.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26AE317B1E77D93800746D87 /* Grids.plist */; };
+		26AE317E1E77DA2B00746D87 /* NotepadNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AE317D1E77DA2B00746D87 /* NotepadNames.swift */; };
+		26AE31801E77EE6300746D87 /* AddListItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AE317F1E77EE6300746D87 /* AddListItemViewController.swift */; };
+		26AE31821E78027400746D87 /* EditListItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AE31811E78027400746D87 /* EditListItemTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +41,23 @@
 		2611479D1E65DBA4008E4482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		261147A51E65E2AE008E4482 /* TwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		261147A91E65E2F7008E4482 /* InstagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
-		261147AB1E65E306008E4482 /* NotepadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotepadViewController.swift; sourceTree = "<group>"; };
-		261147AD1E65E315008E4482 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		261147AB1E65E306008E4482 /* DetailNotepadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailNotepadViewController.swift; sourceTree = "<group>"; };
+		2634AEF41E75FA3D00DB1485 /* NotepadsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotepadsTableViewController.swift; sourceTree = "<group>"; };
+		2634AEF61E75FA5600DB1485 /* ListsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsTableViewController.swift; sourceTree = "<group>"; };
+		2634AEFA1E75FB6800DB1485 /* GridsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridsTableViewController.swift; sourceTree = "<group>"; };
+		2634AEFC1E75FB8B00DB1485 /* NewGridCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGridCollectionViewController.swift; sourceTree = "<group>"; };
+		2634AEFE1E7607BA00DB1485 /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
+		2634AF001E760A0D00DB1485 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		2634AF061E761ADE00DB1485 /* AddListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListViewController.swift; sourceTree = "<group>"; };
 		2641B4361E68A21600643E00 /* HubCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubCollectionViewController.swift; sourceTree = "<group>"; };
-		26BAE0391E7296BC0045C808 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		26AE31711E77B93600746D87 /* DetailListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailListTableViewController.swift; sourceTree = "<group>"; };
+		26AE31731E77BADE00746D87 /* Lists.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Lists.plist; sourceTree = "<group>"; };
+		26AE31751E77BC4F00746D87 /* ListNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNames.swift; sourceTree = "<group>"; };
+		26AE31791E77D92400746D87 /* Notepads.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Notepads.plist; sourceTree = "<group>"; };
+		26AE317B1E77D93800746D87 /* Grids.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Grids.plist; sourceTree = "<group>"; };
+		26AE317D1E77DA2B00746D87 /* NotepadNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotepadNames.swift; sourceTree = "<group>"; };
+		26AE317F1E77EE6300746D87 /* AddListItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListItemViewController.swift; sourceTree = "<group>"; };
+		26AE31811E78027400746D87 /* EditListItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditListItemTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +95,25 @@
 				2641B4361E68A21600643E00 /* HubCollectionViewController.swift */,
 				261147A51E65E2AE008E4482 /* TwitterViewController.swift */,
 				261147A91E65E2F7008E4482 /* InstagramViewController.swift */,
-				261147AB1E65E306008E4482 /* NotepadViewController.swift */,
-				26BAE0391E7296BC0045C808 /* Note.swift */,
-				261147AD1E65E315008E4482 /* ListTableViewController.swift */,
+				2634AEF41E75FA3D00DB1485 /* NotepadsTableViewController.swift */,
+				26AE317D1E77DA2B00746D87 /* NotepadNames.swift */,
+				261147AB1E65E306008E4482 /* DetailNotepadViewController.swift */,
+				2634AEF61E75FA5600DB1485 /* ListsTableViewController.swift */,
+				26AE31751E77BC4F00746D87 /* ListNames.swift */,
+				2634AF061E761ADE00DB1485 /* AddListViewController.swift */,
+				26AE31711E77B93600746D87 /* DetailListTableViewController.swift */,
+				26AE317F1E77EE6300746D87 /* AddListItemViewController.swift */,
+				26AE31811E78027400746D87 /* EditListItemTableViewController.swift */,
+				2634AEFA1E75FB6800DB1485 /* GridsTableViewController.swift */,
+				2634AEFC1E75FB8B00DB1485 /* NewGridCollectionViewController.swift */,
+				2634AEFE1E7607BA00DB1485 /* GridCollectionViewCell.swift */,
+				2634AF001E760A0D00DB1485 /* ImagePickerViewController.swift */,
 				261147981E65DBA4008E4482 /* Assets.xcassets */,
 				2611479A1E65DBA4008E4482 /* LaunchScreen.storyboard */,
 				2611479D1E65DBA4008E4482 /* Info.plist */,
+				26AE31791E77D92400746D87 /* Notepads.plist */,
+				26AE31731E77BADE00746D87 /* Lists.plist */,
+				26AE317B1E77D93800746D87 /* Grids.plist */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -139,7 +178,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26AE31741E77BADE00746D87 /* Lists.plist in Resources */,
+				26AE317A1E77D92400746D87 /* Notepads.plist in Resources */,
 				2611479C1E65DBA4008E4482 /* LaunchScreen.storyboard in Resources */,
+				26AE317C1E77D93800746D87 /* Grids.plist in Resources */,
 				261147991E65DBA4008E4482 /* Assets.xcassets in Resources */,
 				261147971E65DBA4008E4482 /* Main.storyboard in Resources */,
 			);
@@ -153,12 +195,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				261147A61E65E2AE008E4482 /* TwitterViewController.swift in Sources */,
-				261147AC1E65E306008E4482 /* NotepadViewController.swift in Sources */,
-				26BAE03A1E7296BC0045C808 /* Note.swift in Sources */,
+				261147AC1E65E306008E4482 /* DetailNotepadViewController.swift in Sources */,
+				2634AEF51E75FA3D00DB1485 /* NotepadsTableViewController.swift in Sources */,
+				2634AEFB1E75FB6800DB1485 /* GridsTableViewController.swift in Sources */,
+				26AE31721E77B93600746D87 /* DetailListTableViewController.swift in Sources */,
 				261147AA1E65E2F7008E4482 /* InstagramViewController.swift in Sources */,
-				261147AE1E65E315008E4482 /* ListTableViewController.swift in Sources */,
+				26AE31761E77BC4F00746D87 /* ListNames.swift in Sources */,
+				2634AF071E761ADE00DB1485 /* AddListViewController.swift in Sources */,
+				26AE31821E78027400746D87 /* EditListItemTableViewController.swift in Sources */,
+				2634AEFF1E7607BA00DB1485 /* GridCollectionViewCell.swift in Sources */,
+				2634AF011E760A0D00DB1485 /* ImagePickerViewController.swift in Sources */,
 				2641B4371E68A21600643E00 /* HubCollectionViewController.swift in Sources */,
 				261147921E65DBA4008E4482 /* AppDelegate.swift in Sources */,
+				2634AEFD1E75FB8B00DB1485 /* NewGridCollectionViewController.swift in Sources */,
+				26AE31801E77EE6300746D87 /* AddListItemViewController.swift in Sources */,
+				2634AEF71E75FA5600DB1485 /* ListsTableViewController.swift in Sources */,
+				26AE317E1E77DA2B00746D87 /* NotepadNames.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
