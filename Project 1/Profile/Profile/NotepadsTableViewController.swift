@@ -38,6 +38,7 @@ class NotepadsTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
         
         //load the data of the plist file into the dictionary
+        //this line screws up the app on my phoen
         notepadNameList.notepadNameData = NSDictionary(contentsOfFile: path!) as! [String : [String]]
         //puts all the continents in an array
         notepadNameList.notepadName = Array(notepadNameList.notepadNameData.keys)
