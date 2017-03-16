@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Winter Park</key>
+	<array>
+		<string>https://www.snow.com/</string>
+		<string>Summer Park</string>
+		<string>Spring Park</string>
+	</array>
+	<key>Aspen</key>
+	<array>
+		<string>https://www.snow.com/</string>
+		<string>Cascade</string>
+		<string>Incline</string>
+		<string>Decline</string>
+	</array>
+	<key>Eldora</key>
+	<array>
+		<string>https://www.eldora.com/</string>
+		<string>Gold</string>
+		<string>Short</string>
+	</array>
+	<key>Steamboat</key>
+	<array>
+		<string>https://www.steamboat.com/</string>
+		<string>Netti Pot</string>
+		<string>Humidifier</string>
+	</array>
+</dict>
+</plist>
