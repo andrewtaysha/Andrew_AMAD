@@ -14,7 +14,7 @@ class NotepadsTableViewController: UITableViewController {
     
     func getDataFile() -> String? {
         //use a Bundle object of the directory for our application to retrieve the pathname of Notepads.plist
-        guard let pathString = Bundle.init().path(forResource: "Notepads", ofType: "plist") else {
+        guard let pathString = Bundle.main.path(forResource: "Notepads", ofType: "plist") else {
             return nil
         }
         return pathString
