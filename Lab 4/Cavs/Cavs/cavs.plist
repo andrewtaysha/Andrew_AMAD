@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>players</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Lebron James</string>
+			<key>url</key>
+			<string>https://en.wikipedia.org/wiki/Lebron_James</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Kyrie Irving</string>
+			<key>url</key>
+			<string>https://en.wikipedia.org/wiki/Kyrie_Irving</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Kevin Love</string>
+			<key>url</key>
+			<string>https://en.wikipedia.org/wiki/Kevin_Love</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Kyle Korver</string>
+			<key>url</key>
+			<string>https://en.wikipedia.org/wiki/Kyle_Korver</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>J. R. Smith</string>
+			<key>url</key>
+			<string>https://en.wikipedia.org/wiki/J_R_Smith</string>
+		</dict>
+	</array>
+</dict>
+</plist>
