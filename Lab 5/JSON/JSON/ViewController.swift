@@ -62,6 +62,12 @@ class ViewController: UIViewController {
             print("Error with JSON: \(error)")
             return
         }
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        //let object = objects[indexPath.row]
+        dateLabel.text = objects["date"]
+        if objects["population"] != nil {
+            populationLabel!.text = objects["population"]! + "people"
+        }
     }
     
     override func viewDidLoad() {
