@@ -92,22 +92,7 @@
 			children = (
 				261147911E65DBA4008E4482 /* AppDelegate.swift */,
 				261147951E65DBA4008E4482 /* Main.storyboard */,
-				2641B4361E68A21600643E00 /* HubCollectionViewController.swift */,
-				261147A51E65E2AE008E4482 /* TwitterViewController.swift */,
-				261147A91E65E2F7008E4482 /* InstagramViewController.swift */,
-				2634AEF41E75FA3D00DB1485 /* NotepadsTableViewController.swift */,
-				26AE317D1E77DA2B00746D87 /* NotepadNames.swift */,
-				261147AB1E65E306008E4482 /* DetailNotepadViewController.swift */,
-				2634AEF61E75FA5600DB1485 /* ListsTableViewController.swift */,
-				26AE31751E77BC4F00746D87 /* ListNames.swift */,
-				2634AF061E761ADE00DB1485 /* AddListViewController.swift */,
-				26AE31711E77B93600746D87 /* DetailListTableViewController.swift */,
-				26AE317F1E77EE6300746D87 /* AddListItemViewController.swift */,
-				26AE31811E78027400746D87 /* EditListItemTableViewController.swift */,
-				2634AEFA1E75FB6800DB1485 /* GridsTableViewController.swift */,
-				2634AEFC1E75FB8B00DB1485 /* NewGridCollectionViewController.swift */,
-				2634AEFE1E7607BA00DB1485 /* GridCollectionViewCell.swift */,
-				2634AF001E760A0D00DB1485 /* ImagePickerViewController.swift */,
+				26319FF31E9C0882002DE553 /* Hub */,
 				261147981E65DBA4008E4482 /* Assets.xcassets */,
 				2611479A1E65DBA4008E4482 /* LaunchScreen.storyboard */,
 				2611479D1E65DBA4008E4482 /* Info.plist */,
@@ -116,6 +101,53 @@
 				26AE317B1E77D93800746D87 /* Grids.plist */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		26319FF01E9C080A002DE553 /* Notepads */ = {
+			isa = PBXGroup;
+			children = (
+				2634AEF41E75FA3D00DB1485 /* NotepadsTableViewController.swift */,
+				26AE317D1E77DA2B00746D87 /* NotepadNames.swift */,
+				261147AB1E65E306008E4482 /* DetailNotepadViewController.swift */,
+			);
+			name = Notepads;
+			sourceTree = "<group>";
+		};
+		26319FF11E9C083C002DE553 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				2634AEF61E75FA5600DB1485 /* ListsTableViewController.swift */,
+				26AE31751E77BC4F00746D87 /* ListNames.swift */,
+				2634AF061E761ADE00DB1485 /* AddListViewController.swift */,
+				26AE31711E77B93600746D87 /* DetailListTableViewController.swift */,
+				26AE317F1E77EE6300746D87 /* AddListItemViewController.swift */,
+				26AE31811E78027400746D87 /* EditListItemTableViewController.swift */,
+			);
+			name = Lists;
+			sourceTree = "<group>";
+		};
+		26319FF21E9C0868002DE553 /* Grids */ = {
+			isa = PBXGroup;
+			children = (
+				2634AEFA1E75FB6800DB1485 /* GridsTableViewController.swift */,
+				2634AEFC1E75FB8B00DB1485 /* NewGridCollectionViewController.swift */,
+				2634AEFE1E7607BA00DB1485 /* GridCollectionViewCell.swift */,
+				2634AF001E760A0D00DB1485 /* ImagePickerViewController.swift */,
+			);
+			name = Grids;
+			sourceTree = "<group>";
+		};
+		26319FF31E9C0882002DE553 /* Hub */ = {
+			isa = PBXGroup;
+			children = (
+				2641B4361E68A21600643E00 /* HubCollectionViewController.swift */,
+				261147A51E65E2AE008E4482 /* TwitterViewController.swift */,
+				261147A91E65E2F7008E4482 /* InstagramViewController.swift */,
+				26319FF01E9C080A002DE553 /* Notepads */,
+				26319FF11E9C083C002DE553 /* Lists */,
+				26319FF21E9C0868002DE553 /* Grids */,
+			);
+			name = Hub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
