@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Profile</string>
+    <string name="lists_image">Lists Image</string>
+    <string name="lists">Lists</string>
+    <string name="twitter_image">Twitter Image</string>
+    <string name="twitter">Twitter</string>
+</resources>
