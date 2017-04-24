@@ -48,13 +48,13 @@ class ViewController: UIViewController {
             //add results to objects
             for result in allresults {
                 //check that data exists
-                guard let date = result["date"]! as? String,
+                guard let date = result["date"]! as? NSNumber,
                     let population = result["population"] as? NSNumber
                     else {
                         continue
                 }
                 //create new object
-                let obj = ["date": date, "population": population.stringValue]
+                let obj = ["date": date.stringValue, "population": population.stringValue]
                 //add object to array
                 self.objects.append(obj) }
             //handle thrown error
@@ -62,8 +62,6 @@ class ViewController: UIViewController {
             print("Error with JSON: \(error)")
             return
         }
-        //let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        //let object = objects[indexPath.row]
         dateLabel.text = objects["date"]
         if objects["population"] != nil {
             populationLabel!.text = objects["population"]! + "people"
