@@ -6,52 +6,58 @@
     android:layout_height="match_parent"
     tools:context="com.example.andrewtaylor_shaut.profile.MainActivity">
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="16dp"
-        android:contentDescription="@string/lists_image"
-        android:src="@android:drawable/ic_menu_gallery"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="24dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintTop_creator="1" />
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp">
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/twitter_image"
-        android:src="@android:drawable/ic_menu_gallery"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/listButton"
+            android:layout_width="122dp"
+            android:layout_height="122dp"
+            android:background="@drawable/list"
+            android:contentDescription="@string/lists_image"
+            android:src="@drawable/list" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="61dp"
-        android:text="@string/lists"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="19dp"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="@string/lists"
+            android:textAlignment="center" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="16dp"
-        android:text="@string/twitter"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="19dp"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="122dp"
+            android:layout_height="122dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:background="@drawable/twitter"
+            android:contentDescription="@string/lists_image"
+            android:src="@drawable/twitter" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:text="@string/twitter"
+            android:textAlignment="center" />
+    </GridLayout>
 </android.support.constraint.ConstraintLayout>

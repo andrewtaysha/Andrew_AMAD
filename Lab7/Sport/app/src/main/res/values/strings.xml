@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Sport</string>
+    <string name="sports"></string>
+    <string-array name="sport_types">
+        <item>Baseball</item>
+        <item>Basketball</item>
+        <item>Soccer</item>
+        <item>Biking</item>
+        <item>Running</item>
+        <item>Swimming</item>
+    </string-array>
+    <string name="sport_image">Sport picture</string>
+    <string name="create_order"></string>
+</resources>

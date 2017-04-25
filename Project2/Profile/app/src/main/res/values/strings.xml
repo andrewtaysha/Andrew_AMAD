@@ -2,6 +2,12 @@
     <string name="app_name">Profile</string>
     <string name="lists_image">Lists Image</string>
     <string name="lists">Lists</string>
+    <string-array name="list_names">
+        <item>groceries</item>
+        <item>chores</item>
+    </string-array>
     <string name="twitter_image">Twitter Image</string>
     <string name="twitter">Twitter</string>
+    <string name="adddialog_title">Add Item</string>
+    <string name="deletedialog_title">Delete Item</string>
 </resources>
