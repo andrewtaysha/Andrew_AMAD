@@ -21,11 +21,11 @@ public class ListItems {
             new ListItems("The Notebook DVD")
     };
 
-    /*public static final ListItems[] chores = {
+    public static final ListItems[] chores = {
             new ListItems("Do Homework"),
             new ListItems("Get Sleep"),
             new ListItems("Graduate"),
-    };*/
+    };
 
     public String getName(){
         return name;

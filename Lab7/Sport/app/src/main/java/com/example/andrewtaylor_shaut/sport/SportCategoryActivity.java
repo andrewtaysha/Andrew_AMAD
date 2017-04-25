@@ -28,9 +28,9 @@ public class SportCategoryActivity extends ListActivity {
             default: listAdapter = new ArrayAdapter<Sport>(this, android.R.layout.simple_list_item_1,
                     Sport.sportswithballs); }
         switch (sporttype){ case "Sports Without Balls":
-            listAdapter = new ArrayAdapter<Sport>(this, android.R.layout.simple_list_item_2, Sport.sportswithoutballs);
+            listAdapter = new ArrayAdapter<Sport>(this, android.R.layout.simple_list_item_1, Sport.sportswithoutballs);
             break;
-            default: listAdapter = new ArrayAdapter<Sport>(this, android.R.layout.simple_list_item_2,
+            default: listAdapter = new ArrayAdapter<Sport>(this, android.R.layout.simple_list_item_1,
                     Sport.sportswithoutballs); }
 //set the array adapter on the list view
         listSports.setAdapter(listAdapter); }
