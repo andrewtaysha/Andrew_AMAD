@@ -14,17 +14,18 @@ public class ListItems {
     }
 
     public static final ListItems[] groceries = {
-            new ListItems("Ice Cream"),
-            new ListItems("Wine"),
-            new ListItems("Chocolate"),
-            new ListItems("Tissues"),
+            new ListItems("ice cream"),
+            new ListItems("wine"),
+            new ListItems("chocolate"),
+            new ListItems("tissues"),
             new ListItems("The Notebook DVD")
     };
 
     public static final ListItems[] chores = {
-            new ListItems("Do Homework"),
-            new ListItems("Get Sleep"),
-            new ListItems("Graduate"),
+            new ListItems("do homework"),
+            new ListItems("yell at the moon"),
+            new ListItems("get sleep"),
+            new ListItems("graduate"),
     };
 
     public String getName(){

@@ -30,7 +30,10 @@ public class ListsChild extends ListActivity {
             case "Groceries":
                 listAdapter = new ArrayAdapter<ListItems>(this, android.R.layout.simple_list_item_1, ListItems.groceries);
                 break;
-            default: listAdapter = new ArrayAdapter<ListItems>(this, android.R.layout.simple_list_item_1, ListItems.groceries);
+            case "Chores":
+                listAdapter = new ArrayAdapter<ListItems>(this, android.R.layout.simple_list_item_1, ListItems.chores);
+                break;
+            default: listAdapter = new ArrayAdapter<ListItems>(this, android.R.layout.simple_list_item_1, ListItems.chores);
         }
 
         //set the array adapter on the list view
