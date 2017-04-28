@@ -15,8 +15,8 @@ public class Villain {
         this.supervillains = new ArrayList<String>(villains);
     }
     public static final Villain [] villains = {
-            new Villain("DC", new ArrayList<String>(Arrays.asList("Superman", "Batman", "Wonder Woman", "The Flash", "Green Arrow", "Catwoman"))),
-            new Villain("Marvel", new ArrayList<String>(Arrays.asList("Iron Man", "Black Widow", "Captain America", "Jean Grey", "Thor", "Hulk"))) };
+            new Villain("DC", new ArrayList<String>(Arrays.asList("Bane", "Brainiac", "Harley Quinn", "Joker", "Poison Ivy", "Lex Luther"))),
+            new Villain("Marvel", new ArrayList<String>(Arrays.asList("Ultron", "Loki", "Doctor Doom", "Venom", "Mandarin", "Thanos"))) };
     public String getUniverse(){ return universe;
     }
     public ArrayList<String> getSupervillains(){ return supervillains;
