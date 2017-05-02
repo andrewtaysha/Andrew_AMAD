@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Taylor-Shaut_Final</string>
+    <string name="activities">Activities</string>
+    <string-array name="activity_types">
+        <item>Indoors</item>
+        <item>Outdoors</item>
+    </string-array>
+    <string name="activity_image">Activity picture</string>
+    <string name="add_activity_hint">Activity name</string>
+    <string name="adddialog_title">Add Activity</string>
+    <string name="sign_up">Sign Up</string>
+</resources>
