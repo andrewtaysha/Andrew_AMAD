@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "115671747220",
+    "firebase_url": "https://sports-d54ee.firebaseio.com",
+    "project_id": "sports-d54ee",
+    "storage_bucket": "sports-d54ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115671747220:android:24e2d0190cd970bd",
+        "android_client_info": {
+          "package_name": "com.example.andrewtaylor_shaut.sports"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115671747220-0i1b9vh9dp048u5ou7ihmm11atqqcp0p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.andrewtaylor_shaut.sports",
+            "certificate_hash": "e731c55595529840c3c4caa77eb9f2b8aadd08d0"
+          }
+        },
+        {
+          "client_id": "115671747220-kv9ddpecpk7gsrf809s4bdn9k5kr4qpq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT823PegxAe5QuG7_XCct11YgbZfcxlHk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115671747220-kv9ddpecpk7gsrf809s4bdn9k5kr4qpq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
