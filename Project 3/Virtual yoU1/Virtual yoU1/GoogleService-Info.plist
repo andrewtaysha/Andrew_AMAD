@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>536394111748-bi4e0b2bvciv6jmbupnn8d63itl42pe1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.536394111748-bi4e0b2bvciv6jmbupnn8d63itl42pe1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDYwpHjSBXR5apEezFAJ_vBhx7KJ5Jqx8M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>536394111748</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.andrewtaylor-shaut.Virtual-yoU1</string>
+	<key>PROJECT_ID</key>
+	<string>virtual-you</string>
+	<key>STORAGE_BUCKET</key>
+	<string>virtual-you.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:536394111748:ios:474e0aca293cfa67</string>
+	<key>DATABASE_URL</key>
+	<string>https://virtual-you.firebaseio.com</string>
+</dict>
+</plist>

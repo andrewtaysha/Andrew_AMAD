@@ -13,10 +13,13 @@ class ListNames {
     var listNameData = [String : [String]]()
     var listName = [String]()
     
+    init(listNameData: [String : [String]], listName: String){
+        }
+    
     init(snapshot: FIRDataSnapshot) {
-        let snapshotValue = snapshot.value as! [String : String]
-        listNameData = [snapshotValue["listNameData"]!]
-        listName = [snapshotValue["listName"]!]
+        let snapshotValue = snapshot.value as? NSArray
+        listNameData = [snapshotValue!["listNameData"] as! Array]
+        listName = [snapshotValue!["listName"]! as! String]
     }
 }
 
